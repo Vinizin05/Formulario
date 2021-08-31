@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,47 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+
+        .box {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 8);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+        }
+
+        fieldset {
+            border: 3px solid dodgerblue;
+        }
+
+        legend {
+            border: 1px solid rgb(16, 114, 212);
+            padding: 10px;
+            text-align: center;
+            background: dodgerblue
+        }
+
+        .inputbox {
+            position: relative;
+        }
+
+        .inputUser {
+            background: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 13px;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <form action="">
@@ -20,17 +58,17 @@
                 <br>
                 <div class="inputbox">
                     <input type="text" name="none" id="none" class="inputUser" required>
-                    <label for="none">Nome Completo</label>
-                </div> 
+                    <label for="none" Iclass="labelInput">Nome Completo</label>
+                </div>
                 <br><br>
                 <div class="inputbox">
                     <input type="Email" name="Email" id="Email" class="inputUser" required>
-                    <label for="Email">Email</label>
+                    <label for="Email" Iclass="labelInput">Email</label>
                 </div>
                 <br><br>
                 <div class="inputbox">
                     <input type="Tel" name="Telefone" id="Telefone" class="inputUser" required>
-                    <label for="none">Telefone</label>
+                    <label for="none" Iclass="labelInput">Telefone</label>
                 </div>
                 <br><br>
                 <p>Sexo:</p>
@@ -45,21 +83,22 @@
                     <label for="data_nascimento"><b>Data de nascimento</b> </label>
                     <input type="date" name="data nascimento" id="data_nascimento" class="inputUser" required>
                     <br><br>
-                  </div>
-                  <div class="inputbox">
+                </div>
+                <div class="inputbox">
                     <input type="Next" name="Cidade" id="Cidade" class="inputUser" required>
-                    <label for="Cidade">Cidade</label>
+                    <label for="Cidade" Iclass="labelInput">Cidade</label>
                     <br><br>
                     <div class="inputbox">
                         <input type="text" name="estado" id="estado" class="inputUser" required>
-                        <label for="estado">Estado</label>
+                        <label for="estado" Iclass="labelInput">Estado</label>
                         <br><br>
-                        <div class="inputbox"> 
+                        <div class="inputbox">
                             <input type="next" name="endereco" id="endereco" class="inputUser" required>
-                            <label for="endereco">Endereço</label>
-                     <input type="submit" name="submit" id="submit">
-               </fieldset>
+                            <label for="endereco" Iclass="labelInput">Endereço</label>
+                            <input type="submit" name="submit" id="submit">
+            </fieldset>
         </form>
     </div>
 </body>
+
 </html>
